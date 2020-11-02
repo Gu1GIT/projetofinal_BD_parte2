@@ -24,6 +24,7 @@ public class CadastroLocalAcitivity extends AppCompatActivity {
     private EditText editTextBairro;
     private EditText editTextCidade;
     private EditText editTextCapacidade;
+    private Float capacidadefloat = null;
 
 
     @Override
@@ -74,7 +75,10 @@ public class CadastroLocalAcitivity extends AppCompatActivity {
         String bairro = editTextBairro.getText().toString();
         String cidade = editTextCidade.getText().toString();
         String capacidade =  editTextCapacidade.getText().toString();
-        Float capacidadefloat = Float.parseFloat(capacidade);
+
+        if (!capacidade.isEmpty()) {
+            capacidadefloat = Float.parseFloat(capacidade);
+        }
 
 
         if ((nomelocal.isEmpty() || bairro.isEmpty() || cidade.isEmpty()|| capacidade.isEmpty()) && !excluir) {

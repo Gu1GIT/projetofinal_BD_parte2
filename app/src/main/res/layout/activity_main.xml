@@ -14,7 +14,7 @@
         android:id="@+id/listView_local"
         style="@style/Widget.AppCompat.ListView"
         android:layout_width="match_parent"
-        android:layout_height="@android:dimen/thumbnail_height"
+        android:layout_height="328dp"
         android:background="#FFFFFF" />
 
     <Button
