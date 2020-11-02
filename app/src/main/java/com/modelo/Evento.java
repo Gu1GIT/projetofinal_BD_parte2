@@ -58,3 +58,4 @@ public class Evento implements Serializable {
         return ("ID:"+ id+ "\n" +"EVENTO: " + nome + "\n" + "DATA: " + data + "\n" + local);
     }
 }
+
